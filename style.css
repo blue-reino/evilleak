@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    background: #2a2238;
+    min-height: 150vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+    background: #252525;
+}
+
+nav .menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;  
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    transition: padding 0.5s, background-color 0.5s;
+}
+
+nav ul li:hover{
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    display: inline;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ff00b7;
+    transition: 0.5s;
+}
+
+nav ul li:not(:hover) {
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: initial;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+button {
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.outer{
+    margin: 0 50px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+
+}
+
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+.lamp-container {
+    position: absolute;
+    height: auto;
+    top: 150px;
+    left: 10%;
+    width: 200px;
+}
+
+.lamp {
+    width: 225%;
+    height: auto;
+    transition: transform 0.5s ease-in-out; /* Adjusted the transition property */
+}
+
+.lamp:hover {
+    animation: shake 5s ease-in-out infinite;
+}
+
+.anticheats-container {
+    background-color: #161616;
+    position: absolute;
+    height: 500px;
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px 30px 20px;
+}
+
+.easyac{
+    
+    width: 220px;
+    height: 120px;
+    position: relative; left: 500px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.battleeye{
+     
+    width: 115px;
+    height: 125px;
+    position: relative; left: 500px;
+    object-fit: contain;
+    padding: 10px;
+    
+}
+
+
+.vangaurd{
+    
+    width: 100px;
+    height: 115px;
+    position: relative; left: 500px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.anticheats-container p{
+    text-align: center  ;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(-5px, -5px) rotate(-2deg);
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translate(5px, 5px) rotate(2deg);
+    }
+}
+
+
+
+.light{
+    width: 225%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-contrainer{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-contrainer h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.text-contrainer a{
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff00b5, #7c81ff, #00d4ff);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5);
+    /*background: linear-gradient(90deg, #755bea, #ff72c0);*/
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.text-contrainer a:hover{
+    text-decoration: none;
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+    /*background: linear-gradient(90deg, #755bea, #ff72c0);*/
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+
+.highlight{
+    background: linear-gradient(90deg, rgba(255,0,181,1) 0%, rgba(220,124,255,1) 47%, rgba(0,212,255,1) 100%);    border-radius: 6px;
+    padding: 3px 6px;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+
+.control .line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #ff00b7;
+    display: block;
+}
+
+.active {
+    background: #00986f;
+}
+
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+
+.on{
+    background: #b990ff;
+}
+
+footer{
+    position: relative; top: 500px;
+    background-color: #111;
+}
+
+.footerContainer{
+    width: 100%;
+    padding-top: 300px;
+    margin-bottom: 300px;
+    padding: 20px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center; 
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transform: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #000;
+    position: relative; top: 170px;
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+
+}
