@@ -11,6 +11,7 @@
     width: 100%;
     color: #fff;
     position: relative;
+    transition: background 0.5s ease-in-out;
 
 }
 
@@ -194,8 +195,9 @@ button span{
 
 .text-contrainer a{
     text-decoration: none;
+    
     background: linear-gradient(45deg, #ff00b5, #7c81ff, #00d4ff);
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5);
+    
     /*background: linear-gradient(90deg, #755bea, #ff72c0);*/
     padding: 14px 40px;
     display: inline-block;
